@@ -21,6 +21,7 @@ export const Login: FC = () => {
 
       if (response.data.accessToken && response.data.refreshToken) {
         console.log("Login success :", response.data);
+
         navigate("/posts");
       }
     } catch (error) {
@@ -38,6 +39,7 @@ export const Login: FC = () => {
           height: "100vh",
           justifyContent: "center",
           alignItems: "center",
+
         }}>
         <div
           className="d-flex flex-column "
@@ -46,9 +48,11 @@ export const Login: FC = () => {
             backgroundColor: "lightblue",
             padding: "20px",
             borderRadius: "10px",
+
           }}>
           <h1 style={{ display: "flex", justifyContent: "center" }}>Login</h1>
           <label>Email:</label>
+
           <input
             type="email"
             className="mb-3"

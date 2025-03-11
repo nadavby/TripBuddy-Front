@@ -1,4 +1,3 @@
-/** @format */
 
 import { FC, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -90,6 +89,7 @@ export const RegistrationForm: FC = () => {
           justifyContent: "center",
           alignItems: "center",
         }}>
+
         <div
           className="d-flex flex-column "
           style={{
